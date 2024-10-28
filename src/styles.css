@@ -2,33 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply text-black;
+  }
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-[2.875rem] font-medium leading-[2.625rem] -tracking-[0.115rem] md:text-[3.375rem] md:leading-[3rem] md:-tracking-[0.135rem] 2xl:text-[3.875rem] 2xl:leading-[3.625rem] 2xl:-tracking-[0.1875rem];
+  }
+
+  .text-preset-2 {
+    @apply text-[2rem] font-medium leading-[1.75rem] -tracking-[0.12rem] md:text-4xl md:leading-[1.875rem] md:-tracking-[0.135rem] 2xl:text-[2.5rem] 2xl:leading-[2.25rem] 2xl:-tracking-[0.125rem];
+  }
+
+  .text-preset-3 {
+    @apply text-[1.625rem] font-medium leading-6 -tracking-[0.0975rem] md:text-[1.75rem] md:leading-[1.625rem] md:-tracking-[0.105rem] 2xl:text-[2rem] 2xl:leading-7 2xl:-tracking-[0.125rem];
+  }
+
+  .text-preset-4 {
+    @apply text-lg font-normal leading-5;
+  }
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
-}
-
-.text-preset-1 {
-  font-size: 3.875rem;
-  font-weight: 500;
-  line-height: 3.625rem;
-  letter-spacing: -0.1875rem;
-}
-
-.text-preset-2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 2.25rem;
-  letter-spacing: -0.125rem;
-}
-
-.text-preset-3 {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.75rem;
-  letter-spacing: -0.125rem;
-}
-
-.text-preset-4 {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.25rem;
 }

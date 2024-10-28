@@ -3,6 +3,9 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1440px'
+      },
       colors: {
         purple: {
           100: '#DBD1FC',
@@ -16,6 +19,13 @@ export default {
         'wild-sand': { 50: '#F6F5F6' }
       },
       spacing: {
+        45: '11.25rem', // 180px
+        47.5: '11.875rem', // 190px
+        50: '12.5rem', // 200px
+        55: '13.75rem', // 220px
+        57: '14.25rem', // 228px
+        77: '19.25rem', // 308px
+        79: '19.75rem', // 316px
         100: '0.5rem', // 8px
         200: '1rem', // 16px
         300: '1.5rem', // 24px
