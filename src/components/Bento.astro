@@ -9,13 +9,21 @@ import MultiplePlatforms from './MultiplePlatforms.astro';
 import SchedulePosts from './SchedulePosts.astro';
 ---
 
-<div class='grid grid-cols-1 gap-y-400'>
-  <FiveStars />
-  <MultiplePlatforms />
-  <ConsistentSchedule />
+<div
+  class='2xl:auto-rows-2 grid grid-cols-1 gap-y-400 md:grid-cols-2 md:gap-x-400 2xl:grid-flow-dense 2xl:grid-cols-4'
+>
+  <div class='contents 2xl:col-start-2 2xl:col-end-4 2xl:grid 2xl:grid-cols-subgrid 2xl:gap-400'>
+    <FiveStars />
+    <MultiplePlatforms />
+    <ConsistentSchedule />
+  </div>
   <SchedulePosts />
   <GrowFollowers />
   <AudienceGrowth />
-  <CreatePost />
-  <AiContent />
+  <div
+    class='contents 2xl:col-start-1 2xl:col-end-2 2xl:row-start-1 2xl:row-end-3 2xl:grid 2xl:grid-cols-1 2xl:gap-400'
+  >
+    <CreatePost />
+    <AiContent />
+  </div>
 </div>
