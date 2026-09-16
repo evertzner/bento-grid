@@ -49,6 +49,11 @@ Desktop Screenshot
 
 - Astro
 - TailwindCSS
+- TypeScript
+- pnpm
+- ESLint
+- Prettier
+- Husky
 
 ## Installation
 
